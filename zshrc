@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/greenama/.oh-my-zsh
@@ -75,7 +75,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='nvim'
+  export EDITOR='vim'
 fi
 
 # Compilation flags
@@ -105,4 +105,8 @@ export REQUESTS_CA_BUNDLE=~/CBAInternalRootCA.pem
 
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 export PATH="/usr/local/opt/qt/bin:$PATH"
-export EDITOR=nvim
+#export PATH=$HOME/anaconda3/bin:$PATH
+export PATH=/Applications/factor:"$PATH"
+export EDITOR=vim
+
+source  ~/.iterm_2_shell_integration.zsh
