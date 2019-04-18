@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/Cellar/python36/3.6.6/bin:/usr/local/bin:/usr/local/opt/vim/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/greenama/.oh-my-zsh
@@ -102,11 +102,14 @@ export HTTPS_PROXY=$https_proxy
 export ALL_PROXY=$http_proxy
 
 export REQUESTS_CA_BUNDLE=~/CBAInternalRootCA.pem
+#export REQUESTS_CA_BUNDLE=~/mark.pem
 
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 export PATH="/usr/local/opt/qt/bin:$PATH"
-#export PATH=$HOME/anaconda3/bin:$PATH
+export PATH=$HOME/anaconda3/bin:$PATH
 export PATH=/Applications/factor:"$PATH"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 export EDITOR=vim
+export VIMRUNTIME=/usr/local/opt/vim/share/vim/vim81
 
 source  ~/.iterm_2_shell_integration.zsh
