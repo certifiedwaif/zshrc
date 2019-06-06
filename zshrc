@@ -59,7 +59,17 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git, vi-mode
+  brew
+  git
+  kubectl
+  osx
+  postgres
+  python
+  redis-cli
+  vi-mode
+  vim-interaction
+  virtualenv
+  vundle
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -112,4 +122,8 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 export EDITOR=vim
 export VIMRUNTIME=/usr/local/opt/vim/share/vim/vim81
 
+export PATH=/usr/local/Cellar/curl/7.61.1/bin:$PATH
+
 source  ~/.iterm_2_shell_integration.zsh
+
+source <(kubectl completion zsh)
